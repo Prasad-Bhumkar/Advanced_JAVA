@@ -1,0 +1,44 @@
+package CRUD_combined;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+public class CRUD {
+	
+	Connection con;
+	PreparedStatement pstmt;
+	
+	
+	public CRUD() {
+		try {
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/jdbc", "admin", "admin");
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+        System.out.println("Connection established");
+	}
+	
+	public String InsertData (int stud_id,String stud_Name,double stud_Marks) throws SQLException
+	{
+		String query = "insert into student (stud_id, stud_Name,stud_Marks) values (?,?,?)";
+		
+		//create prepared statement 
+		pstmt = con.prepareStatement(query);
+		
+		//set parameters
+		
+		pstmt.setInt(1, stud_id);
+		pstmt.setString(2, stud_Name);
+		pstmt.setDouble(3, stud_Marks);
+		
+		//increase counter
+		
+		int count = pstmt.executeUpdate();
+		
+		return count + "Data Insertd Successfully!!!!!";
+	}
+	
+}
