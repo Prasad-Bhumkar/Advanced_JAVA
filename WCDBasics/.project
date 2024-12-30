@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Employee_Management_System</name>
+	<name>WCDBasics</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -30,7 +30,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1735557280421</id>
+			<id>1735557280426</id>
 			<name></name>
 			<type>30</type>
 			<matcher>
