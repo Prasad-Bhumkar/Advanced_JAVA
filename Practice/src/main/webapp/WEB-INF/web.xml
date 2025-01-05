@@ -13,7 +13,7 @@
     <description></description>
     <display-name>Addition</display-name>
     <servlet-name>Addition</servlet-name>
-    <servlet-class>addition.Addition</servlet-class>
+    <servlet-class>arithmatic_operations.Addition</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Addition</servlet-name>
@@ -23,7 +23,7 @@
     <description></description>
     <display-name>Calculator</display-name>
     <servlet-name>Calculator</servlet-name>
-    <servlet-class>addition.Calculator</servlet-class>
+    <servlet-class>arithmatic_operations.Calculator</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>Calculator</servlet-name>

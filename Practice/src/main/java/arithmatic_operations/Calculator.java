@@ -52,7 +52,7 @@ public class Calculator extends HttpServlet {
                     break;
                 default:
                     out.print("<h1>Invalid operation selected.</h1>");
-                    out.print("<a href='addition.html'>Go Back</a>");
+                    out.print("<a href='arithmatic_operations.html'>Go Back</a>");
                     return;
             }
 
@@ -61,7 +61,7 @@ public class Calculator extends HttpServlet {
         } catch (NumberFormatException e) {
             out.print("<h1>Invalid input. Please enter valid numbers.</h1>");
         }
-        out.print("<a href='addition.html'>Go Back</a>");
+        out.print("<a href='arithmatic_operations.html'>Go Back</a>");
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
